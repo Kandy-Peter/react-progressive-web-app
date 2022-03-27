@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
 const path = require( 'path' );
 const Dotenv = require( 'dotenv-webpack' );
-const { InjectManifest } = require( 'workbox-webpack-plugin' );
+// const { InjectManifest } = require( 'workbox-webpack-plugin' );
 // const CopyPlugin = require( 'copy-webpack-plugin' );
 
 const webpackPlugins = [
@@ -23,12 +23,12 @@ const webpackPlugins = [
 //   } ),
 ];
 
-if ( 'production' === process.env.NODE_ENV ) {
-  webpackPlugins.push( new InjectManifest( {
-    swSrc: './src/src-sw.js',
-    swDest: 'sw.js',
-  } ) );
-}
+// if ( 'production' === process.env.NODE_ENV ) {
+//   webpackPlugins.push( new InjectManifest( {
+//     swSrc: './src/src-sw.js',
+//     swDest: 'sw.js',
+//   } ) );
+// }
 
 module.exports = {
   context: __dirname,
