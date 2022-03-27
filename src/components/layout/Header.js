@@ -1,9 +1,12 @@
 import React from 'react';
 import NetflixLogo from '../icons/NetflixLogo';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
     <div id="logo" className="logo">
-        <NetflixLogo />
+        <Link to='/'>
+            <NetflixLogo />
+        </Link>
     </div>
 )
 
