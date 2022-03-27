@@ -2,7 +2,9 @@ import React from 'react';
 import NetflixLogo from '../icons/NetflixLogo';
 
 const Header = () => (
-    <NetflixLogo />
+    <div id="logo" className="logo">
+        <NetflixLogo />
+    </div>
 )
 
 export default Header;
