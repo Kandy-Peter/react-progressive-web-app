@@ -21,6 +21,7 @@
     "dev": "webpack serve --mode=development",
     "prod": "NODE_ENV=production webpack --mode=production",
     "serve": "npm run prod && serve -s dist",
+    "svg": "svgr -d src/components/icons src/components/icons/svgs",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,6 +48,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
+    "@svgr/cli": "^6.2.1",
     "babel-loader": "^8.2.4",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
