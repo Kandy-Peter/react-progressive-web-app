@@ -1,9 +1,10 @@
 import React from 'react';
 import Layout from '../components/layout/index';
+import Movies from '../components/movies/index';
 
 const Home = () => (
     <Layout>
-        This the layout child
+        <Movies />
     </Layout>
 )
 
