@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require( 'html-webpack-plugin' );
 const path = require( 'path' );
 const Dotenv = require( 'dotenv-webpack' );
-// const { InjectManifest } = require( 'workbox-webpack-plugin' );
+const { InjectManifest } = require( 'workbox-webpack-plugin' );
 // const CopyPlugin = require( 'copy-webpack-plugin' );
 
 const webpackPlugins = [
@@ -13,6 +13,11 @@ const webpackPlugins = [
     path: './.env', // Path to .env file (this is the default)
     systemvars: true,
   } ),
+
+  new InjectManifest( {
+    swSrc: './src/from-sw.js',
+    swDest: 'sw.js',
+  })
 //   new CopyPlugin( {
 //     patterns: [
 //       { from: './src/favicon.ico', to: '' },
