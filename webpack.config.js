@@ -13,11 +13,6 @@ const webpackPlugins = [
     path: './.env', // Path to .env file (this is the default)
     systemvars: true,
   } ),
-
-  new InjectManifest( {
-    swSrc: './src/from-sw.js',
-    swDest: 'sw.js',
-  }),
   new CopyPlugin( {
     patterns: [
       { from: './src/favicon.ico', to: '' },
