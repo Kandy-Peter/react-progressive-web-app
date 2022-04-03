@@ -12,7 +12,7 @@ Moviedb is a progressive web application(PWA) that helps to get started with pwa
 ![Screenshot 2022-04-03 162242](https://user-images.githubusercontent.com/80612925/161432601-95556730-3094-4aff-9e21-9331b6c20851.png)
 
 ## Demo Link
-[Moviedb](https://reverent-dubinsky-40ea41.netlify.app/)
+[Moviedb](https://moviedb-progressive-web-app.vercel.app/)
 ## Built With
 
   ```bash
